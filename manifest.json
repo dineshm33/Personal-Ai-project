@@ -1,0 +1,10 @@
+{
+  "name": "Personal AI Assistant",
+  "short_name": "Personal AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101114",
+  "theme_color": "#101114",
+  "description": "Personal productivity assistant",
+  "icons": []
+}

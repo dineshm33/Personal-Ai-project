@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101114"><meta name="description" content="Your personal AI productivity assistant">
+  <link rel="manifest" href="/static/manifest.json"><link rel="stylesheet" href="/static/style.css">
+  <title>Personal AI Assistant</title>
+</head>
+<body>
+<header><div class="brand"><span class="brand-mark">✦</span><div><b>PERSONAL AI</b><small>YOUR SMART WORKSPACE</small></div></div><div class="header-right"><span id="userLabel">Guest</span><button id="logoutBtn" class="ghost hidden">Log out</button></div></header>
+<main>
+<section id="authPanel" class="auth-card">
+  <div><p class="eyebrow">WELCOME BACK</p><h1>Your day, <em>in control.</em></h1><p class="muted">Sign in or create an account to use your personal workspace.</p></div>
+  <form id="authForm"><label>Email<input id="email" type="email" required placeholder="you@example.com"></label><label>Password<input id="password" type="password" minlength="8" required placeholder="At least 8 characters"></label><div class="auth-actions"><button type="submit" id="authSubmit">Log in</button><button type="button" class="ghost" id="switchAuth">Create account</button></div><p id="authMessage" class="message"></p></form>
+</section>
+<section id="appPanel" class="hidden">
+  <div class="welcome"><div><p class="eyebrow">PERSONAL DASHBOARD</p><h1>Good to see you. <em>What’s next?</em></h1><p class="muted">A single workspace for learning, creating and getting things done.</p></div><div class="date-chip" id="today"></div></div>
+  <div class="module-grid" id="moduleGrid"></div>
+  <section class="workspace">
+    <div class="workspace-head"><div><p class="eyebrow">WORKSPACE</p><h2 id="workspaceTitle">AI Chat</h2></div><span class="status-dot">ONLINE</span></div>
+    <div id="workspaceBody"></div>
+  </section>
+</section>
+</main>
+<footer>PERSONAL AI ASSISTANT <span>•</span> Local-first starter project</footer>
+<script src="/static/app.js"></script>
+</body></html>
